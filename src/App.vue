@@ -1,17 +1,18 @@
 <template>
   <div class="wrapper">
-    <div class="wrapper-content">
-      <section>
-        <div class="container">
-          <h1>Hello modals</h1>
-          <button class="btn btnPrimary" @click="showFirstModal = !showFirstModal">Open first modal</button>
-          <Modal title="First modal" v-if="showFirstModal" @close="showFirstModal = !showFirstModal">
-            <div slot="body">Hello new slot body</div>
-          </Modal>
-        </div>
-      </section>
+    <router-view></router-view>
+<!--    <div class="wrapper-content">-->
+<!--      <section>-->
+<!--        <div class="container">-->
+<!--          <h1>Hello modals</h1>-->
+<!--          <button class="btn btnPrimary" @click="showFirstModal = !showFirstModal">Open first modal</button>-->
+<!--          <Modal title="First modal" v-if="showFirstModal" @close="showFirstModal = !showFirstModal">-->
+<!--            <div slot="body">Hello new slot body</div>-->
+<!--          </Modal>-->
+<!--        </div>-->
+<!--      </section>-->
 
-    </div>
+<!--    </div>-->
   </div>
 </template>
 
